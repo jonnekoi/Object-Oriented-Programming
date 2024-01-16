@@ -1,0 +1,20 @@
+package Module1_2;
+
+import java.util.Scanner;
+
+public class Task2 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of triangle leg (1/2): ");
+        int firstLeg = Integer.parseInt(scanner.nextLine());
+
+        System.out.print("Enter the length of triangle leg (2/2): ");
+        int secondLeg = Integer.parseInt(scanner.nextLine());
+
+        Double hypotenuse  = (Math.hypot(firstLeg, secondLeg));
+        String roundHypotenuse = String.format("%.1f", hypotenuse);
+
+        System.out.println("The length of the hypotenuse is " + roundHypotenuse);
+    }
+}

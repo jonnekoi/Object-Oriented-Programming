@@ -10,8 +10,7 @@ public class Task1 {
         float input = Integer.parseInt(scanner.nextLine());
 
         float celsius = (input - 32) * 5/9;
-        String roundCelsius = String.format("%.1f", celsius);
 
-        System.out.println("Temperature in celcius is: " + roundCelsius + "°");
+        System.out.printf("Temperature in celcius is: %.1f", celsius);
     }
 }

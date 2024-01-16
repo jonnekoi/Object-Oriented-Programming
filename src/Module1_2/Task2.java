@@ -13,8 +13,6 @@ public class Task2 {
         int secondLeg = Integer.parseInt(scanner.nextLine());
 
         Double hypotenuse  = (Math.hypot(firstLeg, secondLeg));
-        String roundHypotenuse = String.format("%.1f", hypotenuse);
-
-        System.out.println("The length of the hypotenuse is " + roundHypotenuse);
+        System.out.printf("The length of the hypotenuse is %.1f", hypotenuse);
     }
 }

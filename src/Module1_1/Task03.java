@@ -13,11 +13,11 @@ public class Task03 {
         System.out.println("Give the third number:");
         int third = Integer.parseInt(scanner.nextLine());
 
-        float summa =  first + second + third;
+        float sum =  first + second + third;
         int product = first * second * third;
-        float average = summa / 3;
+        float average = sum / 3;
 
-        System.out.println("The sum of the numbers is " + (summa));
+        System.out.println("The sum of the numbers is " + (sum));
         System.out.println("The product of the numbers is: " + (product));
         System.out.println("The average of the numbers is: " + (average));
     }

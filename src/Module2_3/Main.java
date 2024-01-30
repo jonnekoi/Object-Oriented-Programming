@@ -14,10 +14,15 @@ public class Main {
 
         System.out.println("Library Catalog:");
         library.viewBooks();
-        System.out.println();
+        System.out.println("");
 
         String search = "Jane Doe";
         System.out.println("Books by author: " + search);
         library.findBooksByAuthor(search);
+        System.out.println();
+
+        library.borrowBook("Introduction to Java Programming");
+        System.out.println();
+        library.returnBook(book1);
     }
 }

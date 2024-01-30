@@ -23,4 +23,19 @@ public class Library {
             }
         }
     }
+
+    public void borrowBook(String title){
+       for(Book book : books){
+           if(book.getTitle() == title){
+               books.remove(book);
+               System.out.print("Book: " + book.getTitle() + " borrowed.");
+               return;
+           }
+       }
+    }
+
+    public void returnBook(Book book){
+        books.add(book);
+        System.out.println("Book: " + book.getTitle() + " returned.");
+    }
 }

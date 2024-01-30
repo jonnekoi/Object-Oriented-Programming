@@ -26,7 +26,7 @@ public class Library {
 
     public void borrowBook(String title){
        for(Book book : books){
-           if(book.getTitle() == title){
+           if(book.getTitle().equalsIgnoreCase(title)){
                books.remove(book);
                System.out.print("Book: " + book.getTitle() + " borrowed.");
                return;
@@ -37,5 +37,14 @@ public class Library {
     public void returnBook(Book book){
         books.add(book);
         System.out.println("Book: " + book.getTitle() + " returned.");
+    }
+
+    public boolean isBookAvailable(String title){
+        for (Book book : books){
+            if(book.getTitle().equalsIgnoreCase(title)){
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -6,13 +6,14 @@ public class Book {
     private String title;
     private String author;
     private int publicationYear;
-    private double rating;
-    private ArrayList<String> reviews;
+    private double rating = 0;
+    private ArrayList<String> reviews = new ArrayList<>();
     public Book(String title, String author, int publicationYear){
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
         this.reviews = new ArrayList<>();
+        this.rating = rating;
     }
 
     public String getTitle(){
@@ -29,7 +30,15 @@ public class Book {
         this.rating = rating;
     }
 
+    public double getRating(){
+        return rating;
+    }
+
     public void addReview(String review){
         reviews.add(review);
+    }
+
+    public ArrayList<String> getReviews() {
+        return reviews;
     }
 }

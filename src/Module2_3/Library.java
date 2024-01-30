@@ -47,4 +47,12 @@ public class Library {
         }
         return false;
     }
+
+    public double getAverageBookRating(){
+        double averageRating = 0;
+        for(Book book : books){
+            averageRating += book.getRating();
+        }
+        return averageRating/books.size();
+    }
 }

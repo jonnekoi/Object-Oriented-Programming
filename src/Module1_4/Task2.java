@@ -34,7 +34,6 @@ public class Task2 {
         System.out.println("Maximum sum: " + maxSum);
         System.out.println("Integers: " + (startIndex + 1) + "-" + (endIndex + 1));
 
-
     }
 }
 

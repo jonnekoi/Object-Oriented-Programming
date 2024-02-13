@@ -27,6 +27,8 @@ public class Fibonacci {
                 writer.append(",");
             }
             System.out.println("Fibonacci numbers written to file " + fileName);
+            writer.flush();
+            writer.close();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
